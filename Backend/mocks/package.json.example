@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "msw": "^2.0.0"
+  },
+  "scripts": {
+    "test": "vitest",
+    "test:ui": "vitest --ui"
+  }
+}
