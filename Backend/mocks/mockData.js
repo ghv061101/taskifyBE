@@ -1,4 +1,4 @@
-// Mock data for MSW handlers
+
 const mockUsers = {
   user_1: {
     _id: 'user_1',
@@ -69,7 +69,7 @@ const mockTasks = {
   task_3: {
     _id: 'task_3',
     title: 'Setup database',
-    description: 'Configure MongoDB and create schemas',
+    description: 'Configure database and create schemas',
     priority: 'high',
     status: 'completed',
     assignee_id: 'user_2',
