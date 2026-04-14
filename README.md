@@ -60,6 +60,11 @@ TaskFlow is a real task management system (not a demo). Users can:
 - Docker & Docker Compose installed
 - Git
 
+### Deployed URLs
+
+- Backend: https://taskifybe-1.onrender.com
+- Frontend: https://taskifygharsha.netlify.app/login
+
 ### Quick Start
 
 ```bash

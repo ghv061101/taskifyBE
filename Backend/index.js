@@ -12,8 +12,18 @@ require('./db');
 const PORT = parseInt(process.env.PORT, 10) || 4000;
 
 // Enable CORS for frontend
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://taskifygharsha.netlify.app'
+];
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('CORS policy: origin not allowed'));
+    }
+  },
   credentials: true
 }));
 
