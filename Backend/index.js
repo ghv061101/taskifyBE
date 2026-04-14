@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
 const { router: authRoutes } = require('./routes/authRoutes');
+const userRoutes = require('./routes/userRoutes');
 const projectRoutes = require('./routes/projectRoutes');
 const taskRoutes = require('./routes/taskRoutes');
 
@@ -18,6 +19,7 @@ app.use(cors({
 
 app.use(bodyParser.json());
 app.use('/api/auth', authRoutes);
+app.use('/users', userRoutes);
 app.use('/api/projects', projectRoutes);
 app.use('/api', taskRoutes);
 
